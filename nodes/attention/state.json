@@ -1,0 +1,10 @@
+{
+  "node_id": "attention",
+  "score": 0,
+  "delta": 0,
+  "status": "blocked",
+  "last_run": null,
+  "consecutive_pass": 0,
+  "consecutive_fail": 0,
+  "interval_ms": 900000
+}

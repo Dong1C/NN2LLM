@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "goal": "从神经网络到LLM",
+  "slug": "从神经网络到llm",
+  "created_at": "2026-04-03T10:58:15.061341+00:00",
+  "description": "从基础神经网络到大型语言模型的完整学习路径",
+  "nodes": [
+    {
+      "id": "nn_basics",
+      "name": "神经网络基础",
+      "description": "MLP、激活函数、损失函数、反向传播、梯度下降",
+      "precondition_score": 0,
+      "status": "pending",
+      "interval_ms": 900000,
+      "dependencies": []
+    },
+    {
+      "id": "classical_arch",
+      "name": "经典架构 CNN/RNN",
+      "description": "卷积神经网络、循环神经网络、LSTM、GRU",
+      "precondition_score": 70,
+      "status": "pending",
+      "interval_ms": 900000,
+      "dependencies": ["nn_basics"]
+    },
+    {
+      "id": "attention",
+      "name": "注意力机制",
+      "description": "Seq2Seq、Attention mechanism、Self-Attention",
+      "precondition_score": 70,
+      "status": "pending",
+      "interval_ms": 900000,
+      "dependencies": ["nn_basics"]
+    },
+    {
+      "id": "transformer",
+      "name": "Transformer 架构",
+      "description": "Positional Encoding、Encoder-Decoder、Attention Scale",
+      "precondition_score": 70,
+      "status": "pending",
+      "interval_ms": 900000,
+      "dependencies": ["attention"]
+    },
+    {
+      "id": "gpt_family",
+      "name": "GPT 系列与语言模型",
+      "description": "GPT-1/2/3/4、LLaMA、ChatGPT 演进",
+      "precondition_score": 70,
+      "status": "pending",
+      "interval_ms": 900000,
+      "dependencies": ["transformer"]
+    },
+    {
+      "id": "llm_training",
+      "name": "LLM 训练方法",
+      "description": "预训练、SFT、RLHF、DPO、Alignment",
+      "precondition_score": 70,
+      "status": "pending",
+      "interval_ms": 900000,
+      "dependencies": ["gpt_family"]
+    },
+    {
+      "id": "llm_deploy",
+      "name": "LLM 部署与应用",
+      "description": "Quantization、推理优化、RAG、Agent",
+      "precondition_score": 70,
+      "status": "pending",
+      "interval_ms": 900000,
+      "dependencies": ["llm_training"]
+    }
+  ]
+}
